@@ -1,0 +1,3529 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Berfey - Beauty & Cosmetics HTML 5 Template
+    Template URI: 
+    Description: This Is Ecommerce HTML5 Template.
+    Author: LuminousLabs
+    Author URI:  https://themeforest.net/user/luminouslabs
+    Version: 1.0.2
+
+----------------------------------------------------------------------------------- */
+
+/* 
+*  CSS TABLE OF GLOBAL CONTENTS
+1.0 - Reset
+2.0 - Fonts
+3.0 - Globals
+    3.1 - Button
+    3.2 - Slick_Slider
+    3.3 - Scroll-Top
+    3.4 - Pagiantion
+    3.5 - Top-Banner
+4.0 Header Area CSS
+5.0 Hero Area CSS Start
+6.0 Services Area CSS  
+7.0 Product Section CSS
+8.0 Discount Section CSS
+9.0 Experience Section CSS
+10.0 Trending Section CSS
+11.0 Blog CSS
+12.0 Testimonial CSS
+13.0 Instagram Section CSS
+14.0 Membership Section CSS
+15.0 Video Play Section CSS
+16.0 Footer CSS Start
+17.0 Shop Sidebar CSS Start
+18.0 Shop Main CSS Start
+19.0 Feelings CSS Start
+20.0 Leadership CSS Start
+21.0 Cart Table CSS Start
+22.0 Cart Total CSS Start
+23.0 Elivate Zoom Section CSS Start
+24.0 Shop Description CSS Start
+25.0 Tabs CSS Start
+26.0 Single Blog CSS Start
+27.0 Blog Details CSS Start
+28.0 Author Section CSS Start
+29.0 Comment Section CSS Start
+30.0 Post Section CSS Start
+31.0 Contact Us Section CSS Start
+
+*/
+
+
+
+
+
+/*---------------------------------------------------------------------------- 
+    1.0 - Reset
+ ----------------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sen', sans-serif;
+  color: #1d1d1d;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 66px;
+}
+
+h3 {
+  font-size: 33px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+
+  display: inline-block;
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2d2d2d;
+}
+
+button:focus {
+  outline: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.flex-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-justify {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+
+
+/*---------------------------------------------------------------------------- 
+    2.0 - Fonts
+ ----------------------------------------------------------------------------*/
+
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-custom {
+  color: #FD5F25;
+  font-family: "Jost";
+}
+
+
+
+/*---------------------------------------------------------------------------- 
+    3.0 - Globals
+ ----------------------------------------------------------------------------*/
+
+.product-search input:focus-visible {
+  outline: none !important;
+  box-shadow: 2px 4px 10px 0 rgb(0 34 51 / 5%), 2px 4px 10px 0 rgb(0 34 51 / 5%);
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #FD5F25;
+  box-shadow: none;
+}
+
+
+/*** 3.1 - Button ***/
+.btn-custom {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 32px;
+  text-transform: capitalize;
+  border-radius: 0;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-custom-primary {
+  border: 1px solid #FD5F25;
+  background: #FD5F25;
+  color: #fff;
+}
+
+.btn-custom-primary:hover {
+  color: #FD5F25;
+  background: transparent;
+}
+
+.btn-custom-secondary {
+  border: 1px solid #C44E00;
+  background: #C44E00;
+  color: #fff;
+}
+
+.btn-custom-secondary:hover {
+  color: #C44E00;
+  background: transparent;
+}
+
+.btn-custom-white {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #1d1d1d;
+}
+
+.btn-custom-white:hover {
+  border: 1px solid #1d1d1d;
+  background: transparent;
+}
+
+.btn-cart {
+  border-radius: 0;
+  color: #d2d2d2;
+  background: transparent;
+  border: 1px solid #d2d2d2;
+}
+
+.btn-cart:hover {
+  color: #222222;
+  background: #d2d2d2;
+}
+
+
+
+/*** 3.2 - Slick_Slider ***/
+/* Slick Slider Start */
+.slick-next,
+.slick-prev {
+  z-index: 111;
+  background: #fff;
+  color: red;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  color: gray;
+}
+
+.slick-next {
+  right: 30px;
+}
+
+.product-wrapper .slick-next {
+  right: -16px;
+}
+
+.product-wrapper .slick-prev {
+  left: -16px;
+}
+
+.slick-prev {
+  left: 30px;
+}
+
+.product-wrapper .slick-prev,
+.product-wrapper .slick-next {
+  top: 42%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-top: 1px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  font-weight: 900;
+  opacity: 1;
+  line-height: 0.3;
+  color: #FD5F25;
+  font-family: 'Font Awesome 6';
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: #FD5F25;
+  outline: none;
+  background: #fff;
+}
+
+/* Slick Slider End */
+
+
+/*** 3.3 - Scroll-Top ***/
+/* Scroll To Top Start */
+.material-scrolltop.reveal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FD5F25 !important;
+  z-index: 999999;
+}
+
+.material-scrolltop::before {
+  background: #FD5F25 !important;
+}
+
+.material-scrolltop.reveal:hover {
+  cursor: pointer;
+}
+
+.material-scrolltop.reveal i {
+  font-size: 40px;
+  color: #fff !important;
+}
+
+/* Scroll To Top End */
+
+
+
+
+
+/*** 3.4 - Pagiantion ***/
+/* pagination Start */
+.pagination-section .page-item:first-child .page-link {
+  border: 0;
+}
+
+.pagination-section .page-link {
+  font-family: 'Sen';
+  font-size: 22px;
+  transition: 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #2d2d2d;
+  padding: 0;
+}
+
+.pagination .page-item {
+  margin-right: 10px;
+}
+
+.pagination .page-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-section .page-item:last-child .page-link {
+  color: #2B2C34;
+}
+
+.pagination-section .page-item:last-child .page-link:hover i {
+  color: #C44E00;
+}
+
+.pagination-section .page-item:last-child .page-link:hover {
+  color: #C44E00;
+}
+
+.pagination-section .page-link i {
+  font-size: 18px;
+  color: #2B2C34;
+  transition: 0.3s;
+}
+
+.pagination-section .page-link:hover {
+  color: #C44E00;
+  background: transparent;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.pagination-section .page-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.pagination-section .page-link.active {
+  color: #C44E00;
+}
+
+/* pagination End */
+
+
+
+
+/*** 3.5 - Top-Banner ***/
+/* Banner Start */
+.top-banner {
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner-title h2 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.banner-title .breadcrumb {
+  background-color: transparent;
+  padding-left: 0;
+}
+
+.banner-title .breadcrumb-item a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.banner-title {
+  z-index: 111;
+}
+
+.banner-title .breadcrumb-item.active {
+  font-size: 18px;
+  color: #fff;
+}
+
+.banner-title .breadcrumb-item+.breadcrumb-item::before {
+  color: #fff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: "\f054";
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  padding: 5px 10px 0 0;
+}
+
+/* Banner End */
+
+/* Re Usable Component End*/
+
+
+/* Template Default CSS */
+
+/* Section Top */
+.section-top-box {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+h2.st-title {
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.st-desc {
+  font-size: 18px;
+}
+
+.section-padding {
+  padding: 120px 0px;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0px;
+}
+
+/* Section Top */
+
+/* Template Default CSS End */
+
+
+
+/*---------------------------------------------------------------------------- 
+    4.0 Header Area CSS
+ ----------------------------------------------------------------------------*/
+
+
+/* Header Menu Start */
+.huc-collection li p,
+.huc-collection li a {
+  font-size: 14px;
+  color: #2d2d2d;
+}
+
+.mobile-show {
+  display: none;
+}
+
+.huc-collection p span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-upper-sec {
+  background-color: #fbfbfb;
+  padding: 5px;
+}
+
+.huc-right .huc-collection li:first-child a {
+  position: relative;
+}
+
+.huc-right .huc-collection li:first-child a:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 2px;
+  background: #2d2d2d;
+  right: -10px;
+  top: 6px;
+}
+
+.header {
+  position: sticky;
+  background: #fff;
+  box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05),
+    2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar-nav .dropdown-menu {
+  margin-bottom: 22px;
+}
+
+.header-menu-logo.navbar-brand {
+  margin-right: 80px;
+}
+
+.header-menu-logo img {
+  width: 110px;
+}
+
+
+.hm-icon-collection li {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hm-icon-collection li:last-child {
+  margin-right: 0;
+  position: relative;
+}
+
+.header-menu .hm-collections li a {
+  font-size: 18px !important;
+  padding: 6px 18px !important;
+  font-weight: 400 !important;
+  color: #2d2d2d !important;
+  margin-bottom: 3px;
+}
+
+.header-menu .hm-collections li:last-child a {
+  margin-bottom: 0 !important;
+}
+
+.header-menu .hm-collections li a:hover {
+  background: #FD5F25;
+  color: #fff !important;
+}
+
+.header-menu .hm-collections li a.active {
+  background: #FD5F25 !important;
+  color: #fff !important;
+}
+
+.header-menu .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  border-bottom: 3px solid #FD5F25;
+}
+
+
+
+.hm-icon-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav.hm-collections li {
+  margin-right: 3px;
+}
+
+.navbar-nav.hm-collections li:last-child {
+  margin-right: 0;
+}
+
+.hm-icon-collection li i {
+  font-size: 22px;
+  font-weight: 300;
+  color: #4d4d4d;
+}
+
+.hm-icon-collection:last-child {
+  position: relative;
+}
+
+.cart-button,
+.search-btn {
+  border: 0;
+  color: #2d2d2d;
+  background: #F3F3F3;
+  font-size: 18px;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  line-height: 40px;
+}
+
+.menu-btn-wrapper {
+  margin-left: 25px;
+}
+
+.search-btn {
+  margin-right: 10px;
+}
+
+.count-num {
+  padding: 3px 7px;
+  color: #fff;
+  font-size: 10px;
+  background: #FD5F25;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff !important;
+  background-color: #FD5F25 !important;
+}
+
+
+
+.text-opacity {
+  font-family: "Jost";
+  color: #1c070d;
+  opacity: 0.5;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+
+.hover-menu-collection {
+  background: #fff;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  transition: all ease 0.3s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+.hover-menu-collection li a {
+  display: block;
+  padding: 5px !important;
+  transition: 0.3s;
+}
+
+.hover-menu-collection li a:hover {
+  background-color: #FD5F25;
+  color: #fff;
+}
+
+.header-menu-wrapper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.language-choose .dropdown-toggle {
+  white-space: nowrap;
+  font-size: 18px !important;
+  padding: 6px 18px !important;
+  font-weight: 300;
+  color: #4d4d4d !important;
+  transition: 0.3s;
+  margin-right: 50px;
+}
+
+
+.homeDropdown i,
+.pagesDropdown i {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.header-menu .hm-collections li a:focus,
+.dropdown-item:hover {
+  color: #fff !important;
+  background-color: #FD5F25;
+}
+
+.header-menu-wrapper .navbar-collapse {
+  justify-content: right;
+}
+
+/* header 2 */
+.header-2 .header-menu-wrapper {
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hero-2 .hero-box {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-2 {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.hero-2 .hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-2 .hero-content-wrapper {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero-2 .hero-content-wrapper h1 {
+  color: #fff;
+}
+
+.hero-2 .hero-content-wrapper p {
+  color: #ebebeb;
+  padding: 0 75px;
+}
+
+/* Header 2 End */
+
+.srch_wrpr {
+  width: 250px;
+  max-width: 250px;
+  height: 0;
+  position: absolute;
+  z-index: 1;
+  right: -95px;
+  top: 20px;
+}
+
+.srch_sb_cnt {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.sech_txt_inpt {
+  opacity: 0;
+  height: 50px;
+  left: 10px;
+  border-radius: 30px;
+  border: 0;
+  width: 94%;
+  padding: 0 60px 0 15px;
+  background-color: transparent;
+  color: #333;
+  font-size: 15px;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.sech_txt_inpt:focus {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sech_txt_inpt:focus,
+.srch_btn:focus {
+  outline: none;
+}
+
+.sech_txt_inpt,
+.srch_btn {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.srch_btn {
+  width: 40px;
+  height: 40px;
+  right: 0;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-color: transparent;
+  border: 0;
+  transition: all 0.4s ease-in-out 0s;
+  font-size: 18px;
+  cursor: pointer;
+  color: #545454;
+}
+
+.srch_btn:after {
+  position: absolute;
+  content: "\f00d";
+  font-family: fontAwesome;
+  top: 30%;
+  transform: translateY(-50%) rotate(0deg);
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  font-size: 28px;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.srch-checkbox {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 40px;
+  opacity: 0;
+  right: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.srch-checkbox:checked {
+  right: 80px;
+  width: 30px;
+  height: 30px;
+}
+
+.srch-checkbox:checked~.srch_sb_cnt {
+  width: 100%;
+  border-radius: 40px;
+  overflow: visible;
+  left: 0;
+}
+
+.srch-checkbox:checked~.srch_sb_cnt .srch_btn {
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  border-radius: 100%;
+  font-size: 15px;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.srch-checkbox:checked~.srch_sb_cnt .sech_txt_inpt {
+  opacity: 1;
+}
+
+.srch-checkbox:checked~.srch_sb_cnt .srch_btn:after {
+  /* transform: translateY(-50%) rotate(90deg); */
+  right: -40px;
+  visibility: visible;
+  transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
+  transition-delay: 0.5s;
+  color: #2d2d2d;
+}
+
+i,
+.fa-solid,
+.fas {
+  font-family: 'fontAwesome';
+}
+
+.header-right-box .header-search-btn {
+  width: 60px;
+  height: 40px;
+  position: relative;
+}
+
+.header-right-box {
+  display: flex;
+  align-items: center;
+}
+
+.menu-box {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+/* New Code Start */
+.dropdown-menu .dropdown-toggle:after {
+  border-top: .3em solid transparent;
+  border-right: 0;
+  border-bottom: .3em solid transparent;
+  border-left: .3em solid;
+}
+
+.dropdown-menu .dropdown-menu {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.nav-item .submenu {
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}
+
+.nav-item .submenu-left {
+  right: 100%;
+  left: auto;
+}
+
+.dropdown-menu>li:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown-menu>li:hover>.submenu {
+  display: block;
+}
+
+.submenu.dropdown-menu {
+  position: absolute !important;
+  left: 100%;
+  top: 0;
+}
+
+.dropdown-menu li {
+  position: relative;
+  margin-right: 0 !important;
+}
+
+.dropdown-item.dropdown-toggle:after {
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* Navbar Smart Menu Start */
+.navbar-nav.sm-collapsible .sub-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: -0.7em 0.5em 0 0;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: .25rem;
+  padding: 0;
+  width: 2em;
+  height: 1.4em;
+  font-size: 1.25rem;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.navbar-nav.sm-collapsible .sub-arrow::before {
+  content: '+';
+}
+
+.navbar-nav.sm-collapsible .show>a>.sub-arrow::before {
+  content: '-';
+}
+
+.navbar-dark .navbar-nav.sm-collapsible .nav-link .sub-arrow {
+  border-color: rgba(255, 255, 255, .1);
+}
+
+/* make sure there's room for the carets */
+.navbar-nav.sm-collapsible .has-submenu {
+  padding-right: 3em;
+}
+
+/* keep the carets properly positioned */
+.navbar-nav.sm-collapsible .nav-link,
+.navbar-nav.sm-collapsible .dropdown-item {
+  position: relative;
+}
+
+
+/* Nav carets in expanded mode */
+.navbar-nav:not(.sm-collapsible) .nav-link .sub-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .255em;
+  vertical-align: .255em;
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-left: .3em solid transparent;
+}
+
+/* point the arrows up for .fixed-bottom navbars */
+.fixed-bottom .navbar-nav:not(.sm-collapsible) .nav-link .sub-arrow,
+.fixed-bottom .navbar-nav:not(.sm-collapsible):not([data-sm-skip]) .dropdown-toggle::after {
+  border-top: 0;
+  border-bottom: .3em solid;
+}
+
+
+/* Dropdown carets in expanded mode */
+.navbar-nav:not(.sm-collapsible) .dropdown-item .sub-arrow,
+.navbar-nav:not(.sm-collapsible):not([data-sm-skip]) .dropdown-menu .dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 0;
+  height: 0;
+  margin-top: -.3em;
+  margin-right: 1em;
+  border-top: .3em solid transparent;
+  border-bottom: .3em solid transparent;
+  border-left: .3em solid;
+}
+
+/* make sure there's room for the carets */
+.navbar-nav:not(.sm-collapsible) .dropdown-item.has-submenu {
+  padding-right: 2em;
+}
+
+
+/* Scrolling arrows for tall menus */
+.navbar-nav .scroll-up,
+.navbar-nav .scroll-down {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  height: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar-nav .scroll-up-arrow,
+.navbar-nav .scroll-down-arrow {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-top: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid;
+  border-left: 7px solid transparent;
+}
+
+.navbar-nav .scroll-down-arrow {
+  top: 6px;
+  border-top: 7px solid;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+
+
+/* Add some spacing for 2+ level sub menus in collapsible mode */
+.navbar-nav.sm-collapsible .dropdown-menu .dropdown-menu {
+  margin: .5em;
+}
+
+
+/* Fix SmartMenus sub menus auto width (subMenusMinWidth/subMenusMaxWidth options) */
+.navbar-nav:not([data-sm-skip]) .dropdown-item {
+  white-space: normal;
+}
+
+.navbar-nav:not(.sm-collapsible) .sm-nowrap>li>.dropdown-item {
+  white-space: nowrap;
+}
+
+/* Navbar Smart Menu End */
+
+/* Header Menu End */
+
+/*---------------------------------------------------------------------------- 
+   Header Area CSS End
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+   5.0 Hero Area CSS Start
+ ----------------------------------------------------------------------------*/
+
+.hero-1,
+.hero-2 {
+  position: relative;
+}
+
+.hero-section {
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-box {
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-2 .hero-box {
+  height: 100vh;
+}
+
+.hero-section .slick-list.draggable {
+  width: 100%;
+  height: 100%;
+}
+
+
+.hero-section .slick-track {
+  height: 100%;
+}
+
+.hero-section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.hero-content-wrapper {
+  width: 750px;
+}
+
+.hero-content-wrapper .hero-cont-top {
+  font-size: 25px;
+  color: #222;
+  font-weight: 500;
+  font-family: "Jost";
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+}
+
+.hero-box {
+  display: flex !important;
+  align-items: center;
+}
+
+.hero-content-wrapper h1 {
+  font-size: 75px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero-cont-top {
+  position: relative;
+}
+
+.hero-cont-top:after {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 3px;
+  background: #222;
+  bottom: 0;
+  left: 30%;
+}
+
+.hero-cont-bottom {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+
+#cartModal {
+  z-index: 9999999;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#cartModal .cartTable th,
+#cartModal .cartTable td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.modal-header {
+  border-bottom: 0;
+}
+
+#cartModal .modal-footer {
+  border-top: 0;
+  justify-content: flex-start;
+}
+
+.cart-buttons-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-left {
+  margin-right: 40px;
+}
+
+.coupon-input-2 {
+  padding: 23px;
+  width: 165px;
+  border: 1px solid #FD5F25;
+  border-radius: 0;
+}
+
+.coupon-input-2::placeholder {
+  color: #FD5F25;
+}
+
+
+/* Search Modal */
+
+button.mble-search-btn i {
+  font-size: 14px;
+}
+
+button.mble-search-btn {
+  border: 0;
+  background: transparent;
+  outline: 0;
+}
+
+.mobile-show {
+  display: none;
+}
+
+.searchModal {
+  z-index: 99999 !important;
+  top: 137px;
+}
+
+.modal-btn-search {
+  background: #424242;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1c1c1c;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.modal-btn-search:link,
+.modal-btn-search:visited {
+  color: #fff;
+}
+
+.modal-btn-search:active,
+.modal-btn-search:hover {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+
+
+.searchModal button.close {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  text-align: center;
+  z-index: 999999;
+}
+
+.searchModal-2 {
+  top: 100px;
+}
+
+.searchModal .modal-dialog {
+  margin: 0;
+}
+
+.searchModal .modal-content {
+  background-color: #ff7e4e;
+  border: 0;
+  border-radius: 0;
+  height: 85px;
+}
+
+.searchModal .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mble-left .language-choose .dropdown-toggle {
+  color: #fff !important;
+}
+
+.searchModal .modal-dialog {
+  width: 100%;
+  max-width: 1024px;
+}
+
+/*---------------------------------------------------------------------------- 
+  Hero Section End 
+/*----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- 
+    6.0 Services Area CSS  
+ ----------------------------------------------------------------------------*/
+
+.service-icon i {
+  font-size: 30px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.single-service {
+  padding: 18px;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.service-title {
+  text-transform: capitalize;
+}
+
+/*---------------------------------------------------------------------------- 
+    Services Area CSS END
+ ----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- 
+    7.0 Product Section CSS
+ ----------------------------------------------------------------------------*/
+
+.single-prod-icon {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: 0.3s;
+  background: #fff;
+}
+
+
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.Ssizer-element {
+  z-index: -1;
+}
+
+.sp-box {
+  position: relative;
+}
+
+.sp-box a.sp-thumbnail {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 470px;
+}
+
+a.sp-thumbnail img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.spb-thumb {
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+.spb-thumb a.sp-thumbnail-url {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.spb-thumb p.discount-rat {
+  display: inline-block;
+  color: #fff;
+  background: #f54337;
+  font-size: 13px;
+  padding: 7px 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.spb-thumb img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.spb-thumb:hover button.add-to-cart {
+  bottom: 0;
+}
+
+.spb-thumb:hover .single-prod-icon {
+  bottom: 25px;
+}
+
+.prod-icon-collection li a p i {
+  font-size: 22px;
+  color: #9b9b9b;
+  padding: 16px 22px;
+}
+
+.prod-icon-collection li a:after {
+  position: absolute;
+  content: "";
+  height: 8px;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  width: 2px;
+  background: #9b9b9b;
+}
+
+.prod-icon-collection li:last-child a:after {
+  display: none;
+}
+
+.prod-icon-collection li a {
+  position: relative;
+  transition: 0.3s;
+}
+
+.prod-icon-collection li a:hover .sp-icon {
+  color: #FD5F25;
+}
+
+.single-product .product-title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Sen;
+  text-transform: capitalize;
+}
+
+.single-product .regular-price {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ratings-collection li {
+  color: #C44E00;
+  margin-right: 5px;
+}
+
+.ratings-collection li:last-child {
+  color: #1d1d1d;
+  margin-right: 0;
+}
+
+.product-ratings {
+  margin-right: 10px;
+}
+
+.ratings-collection li p i {
+  font-size: 16px;
+  color: #C44E00;
+}
+
+.ratings-collection li:last-child {
+  margin-right: 0px;
+}
+
+.ratings-collection li:last-child i {
+  color: #222222;
+}
+
+.product-ratings span {
+  display: inline-block;
+  margin-left: 20px;
+  color: #222;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.product-ratings {
+  margin: 7px 0;
+}
+
+.shop-inner-desc-top .product-ratings {
+  display: flex;
+}
+
+.section-top-box.stp-left {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+/* Product Category Start */
+.pc-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pc-title:hover {
+  color: #FD5F25;
+}
+
+.sp-thumbnail-url {
+  width: 100%;
+}
+
+.single-prod-cat {
+  padding: 0 15px;
+}
+
+/* Product Category End */
+
+
+/*---------------------------------------------------------------------------- 
+    Product Section CSS
+ ----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- 
+   8.0 Discount Section CSS
+ ----------------------------------------------------------------------------*/
+
+.discount-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount-single {
+  width: 49%;
+  padding: 60px 45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.discount-top {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+.discount-heading {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.discount-ration {
+  font-size: 22px;
+  font-family: "Jost";
+  color: #1c070d;
+  opacity: 50%;
+  margin-bottom: 13px;
+}
+
+.discount-content-wrapper {
+  background: rgb(255, 255, 255, 0.5);
+  padding: 25px 50px;
+  text-align: left;
+  display: flex;
+  justify-content: end;
+}
+
+.discount-content-wrapper.jc-start {
+  justify-content: start;
+}
+
+.discount-content {
+  width: 185px;
+}
+
+
+.single-discount {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sd-content h5 {
+  font-size: 45px;
+  font-weight: 600;
+  font-style: italic;
+  color: #C44E00;
+  margin-bottom: 40px;
+}
+
+.sd-content {
+  position: absolute;
+  z-index: 5;
+}
+
+.latest-product-2 {
+  background: #F5F5F5;
+}
+
+
+/*---------------------------------------------------------------------------- 
+    Discount Section CSS END
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+   9.0 Experience Section CSS
+ ----------------------------------------------------------------------------*/
+
+
+.experience-section {
+  padding: 100px 0 200px 0;
+  background: #fffdf5;
+}
+
+.exp-left {
+  width: 60%;
+}
+
+.exp-right {
+  width: 40%;
+}
+
+.el-lg-img {
+  width: 70%;
+  position: relative;
+}
+
+.el-sm-img {
+  width: 60%;
+  position: absolute;
+  bottom: -14%;
+  right: -32%;
+}
+
+.exp-right .exp-title {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.exp-right .btn-custom {
+  margin-top: 30px;
+}
+
+/* exp-2 */
+.exp-img {
+  width: 46%;
+  height: 650px;
+  object-fit: cover;
+  position: relative;
+}
+
+.exp-section {
+  padding: 0 10%;
+}
+
+.experience-2 {
+  background: #F5F5F5;
+}
+
+.exp-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.exp-section .exp-right {
+  width: 735px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(0%, -50%);
+  padding: 36px 60px;
+}
+
+.exp-section .exp-right .exp-title {
+  font-size: 50px;
+}
+
+
+/*---------------------------------------------------------------------------- 
+   Experience Section End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+   10.0 Trending Section CSS
+ ----------------------------------------------------------------------------*/
+
+.section-top {
+  width: 700px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-top .section-top-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-top .section-top-desc {
+  font-size: 18px;
+  opacity: 0.8;
+  color: #4d4d4d;
+}
+
+.trending-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.trending-content-wrapper {
+  width: 60%;
+  background: rgb(255, 255, 255, 0.7);
+  padding: 100px;
+  position: relative;
+}
+
+
+.trending-content .tr-title {
+  font-size: 75px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #C44E00;
+}
+
+.tr-top {
+  margin-bottom: 20px;
+}
+
+.tr-btn {
+  margin-top: 30px;
+}
+
+.tr-top h5 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*---------------------------------------------------------------------------- 
+   Trending Section CSS END
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+   11.0 Blog CSS
+ ----------------------------------------------------------------------------*/
+
+.blog-img img {
+  width: 100%;
+  height: 400px;
+}
+
+.blog-top-search {
+  display: none;
+}
+
+.blog-content .bc-comment {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.blog-content .bc-comment:after {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 2px;
+  background: #ddd;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+.bc-comment .text-custom {
+  color: #2d2d2d;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.bc-comment .text-custom span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.bc-comment .text-custom span i {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.blog-title a {
+  font-size: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.blog-single:hover .blog-title a {
+  color: #FD5F25;
+}
+
+/*---------------------------------------------------------------------------- 
+   Blog CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+   12.0 Testimonial CSS
+ ----------------------------------------------------------------------------*/
+
+.testimonial-section {
+  padding-top: 80px;
+  background: #F8F8F8;
+}
+
+.carousel-content-wrapper {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel-control-prev-icon {
+  background-image: none !important;
+}
+
+
+.carousel-item {
+  height: 530px;
+}
+
+.carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  position: relative;
+  flex: unset;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-indent: 1px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: opacity .6s ease;
+}
+
+
+.carousel-content img {
+  width: 50px;
+  margin-bottom: 30px;
+}
+
+.carousel-indicators {
+  bottom: 200px;
+}
+
+.carousel-bottom h5 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 3px;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  transform: scale(1.2);
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 30px;
+  font-weight: 200;
+  opacity: 1;
+  color: #2d2d2d;
+  transition: 0.3s;
+}
+
+.carousel-control-next-icon {
+  background-image: none !important;
+}
+
+.carousel-control-next:focus .carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-control-next:hover .carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-control-prev:focus .carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #C44E00 !important;
+}
+
+.carousel-content {
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.carousel-content p {
+  margin-bottom: 10px;
+}
+
+.testimonial-slider-ratings li p i {
+  color: #FD5F25;
+}
+
+.carousel-dot-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/*---------------------------------------------------------------------------- 
+   Testimonial CSS End
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+   13.0 Instagram Section CSS
+ ----------------------------------------------------------------------------*/
+
+.instagram-section .st-desc {
+  font-size: 18px;
+  color: #C44E00;
+}
+
+.single-insta {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.insta-hover-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: -100%;
+  top: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.insta-hover-box:hover {
+  color: #fff;
+}
+
+.single-insta:hover .insta-hover-box {
+  left: 0%;
+}
+
+/*---------------------------------------------------------------------------- 
+   Instagram Section CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+   14.0 Membership Section CSS
+ ----------------------------------------------------------------------------*/
+
+.membership-wrapper {
+  flex-wrap: wrap;
+}
+
+.single-member {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.single-member .single-member-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/*---------------------------------------------------------------------------- 
+    Membership Section CSS End
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+   15.0 Video Play Section CSS
+ ----------------------------------------------------------------------------*/
+
+
+.video-play-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-btn {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 62%);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  margin: 100px auto;
+  box-shadow: 0px 0px 25px 3px rgba(255, 255, 255, 1);
+}
+
+/* triangle */
+.play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #C44E00;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+/* pulse wave */
+.play-btn:before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate1 2s;
+  animation: pulsate1 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, .75);
+  top: -25%;
+  left: -25%;
+  background: rgba(198, 16, 0, 0);
+}
+
+@-webkit-keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+
+  }
+}
+
+@keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+
+  }
+}
+
+/*---------------------------------------------------------------------------- 
+    Video Play Section CSS End
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+    16.0 Footer CSS Start
+ ----------------------------------------------------------------------------*/
+
+
+#footer.section {
+  padding-bottom: 0;
+}
+
+.row-align {
+  align-items: baseline;
+}
+
+.footer .footer-faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top-ul {
+  display: flex;
+}
+
+.footer-faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-top-ul a {
+  display: inline-block;
+  color: #fff;
+  opacity: 0.8;
+  margin-right: 25px;
+}
+
+.footer-top-ul li:last-child a {
+  margin-right: 0;
+}
+
+.footer-faq h5 {
+  font-size: 22px;
+  color: #fff;
+}
+
+.footer-social li a {
+  border: 1px solid #fff;
+  color: #1d1d1d;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  transition: 0.6s;
+}
+
+.footer-social li a:hover {
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.footer-social li:first-child a:hover {
+  background-color: #4267b2;
+  border-color: #4267b2;
+}
+
+.footer-social li:nth-child(2) a:hover {
+  background-color: #00acee;
+  border-color: #00acee;
+}
+
+.footer-social li:nth-child(3) a:hover {
+  background: linear-gradient(29.61deg,
+      #f38334 0%,
+      #da2e7d 50.39%,
+      #6b54c6 100%);
+  border-color: #da2e7d;
+}
+
+.footer-social li:nth-child(4) a:hover {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social li {
+  margin-right: 20px;
+}
+
+.footer-top-title {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-desc {
+  color: #fff;
+}
+
+.footer-item-collection li a {
+  display: inline-block;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.footer-section {
+  background: #1d1d1d;
+  padding: 100px 0 25px 0;
+}
+
+.payment-collection li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.footer-bottom-section {
+  padding: 35px 0;
+  background: #ecebe9;
+}
+
+.footer-bottom-section .copyright {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-logo {
+  width: 110px;
+}
+
+.payment-collection {
+  display: flex;
+  align-items: center;
+}
+
+.hr-mod {
+  border-color: #4d4d4d;
+}
+
+.copyright {
+  color: #fff;
+}
+
+/*---------------------------------------------------------------------------- 
+  Footer CSS End
+----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+     17.0 Shop Sidebar CSS Start
+ ----------------------------------------------------------------------------*/
+.search-box {
+  position: relative;
+}
+
+.product-search input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.product-search span {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  transform: translate(0, -50%);
+  top: 50%;
+  color: #2d2d2d;
+}
+
+/* Fliter by Range Start */
+.filter-by-price {
+  margin-top: 25px;
+}
+
+.sliderText {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Jost";
+}
+
+.ui-slider-horizontal {
+  height: 7px;
+}
+
+.ui-slider-horizontal {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.ui-widget-header {
+  background: #3fe331;
+}
+
+.filter-text p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.filter-input {
+  opacity: 0.5;
+}
+
+.price-range-search.btn-custom {
+  padding: 0px 30px;
+}
+
+.price-range-search {
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #6e6666;
+  min-width: 40%;
+  display: block;
+  height: 32px;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.search-results-block {
+  position: relative;
+  display: block;
+  clear: both;
+  margin-top: 15px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  border: 1px solid #2d2d2d;
+  background: #2d2d2d;
+  font-weight: normal;
+  color: #2d2d2d;
+}
+
+.ui-widget-header {
+  background: #2d2d2d;
+}
+
+.ui-widget-content {
+  background: #ececec;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -4px;
+  margin-left: -5px;
+}
+
+.ui-slider .ui-slider-handle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.filter-text {
+  width: 50%;
+}
+
+.filter-box-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px 0;
+}
+
+.filter-input input {
+  width: 80px;
+  padding: 0px 4px;
+  border-radius: 5px;
+}
+
+/* Sidebar Instagram */
+.is-single {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.is-single img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fliter by Range End */
+
+/* Category */
+
+.sidebar-title {
+  font-size: 25px;
+  color: #2d2d2d;
+  font-family: "Sen";
+  font-weight: 800;
+}
+
+.categories-collection li {
+  padding: 7px 0;
+}
+
+.categories-collection li a {
+  font-size: 16px;
+  color: #2d2d2d;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+hr.hr-span {
+  border-top: 2px solid rgba(0, 0, 0, .1);
+  position: relative;
+  margin-bottom: 30px;
+}
+
+hr.hr-span:after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #C44E00;
+  left: 0;
+  top: -2px;
+}
+
+/* Color */
+
+.color-choice {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.color-collection li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.color-collection li:last-child {
+  padding-right: 0px;
+}
+
+.color-collection li:first-child a {
+  background: #ff2c69;
+}
+
+.color-collection li:nth-child(2) a {
+  background: #ff729b;
+}
+
+.color-collection li:nth-child(3) a {
+  background: #ffb5ca;
+}
+
+.color-collection li:nth-child(4) a {
+  background: #f3e785;
+}
+
+.color-collection li:nth-child(5) a {
+  background: #ff29bf;
+}
+
+.color-collection li:nth-child(6) a {
+  background: #ff7e4e;
+}
+
+.color-collection li:nth-child(7) a {
+  background: #2b0d02;
+}
+
+.color-collection li:nth-child(8) a {
+  background: #929292;
+}
+
+/* Size */
+.size-choice {
+  display: inline-block;
+  width: 50px;
+  line-height: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #222;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.size-collection li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+/* Brands */
+.brands-collection li {
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.brands-collection li:last-child {
+  padding-right: 0px;
+}
+
+.brands-choice {
+  display: inline-block;
+  padding-right: 4px;
+  color: #4d4d4d;
+}
+
+/*---------------------------------------------------------------------------- 
+     Shop Sidebar CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+     18.0 Shop Main CSS Start
+ ----------------------------------------------------------------------------*/
+
+.shop-top {
+  margin-bottom: 25px;
+  padding: 0 16px;
+}
+
+.available-search-result {
+  width: 60%;
+}
+
+.grid-icon-wrapper {
+  width: 40%;
+}
+
+.st-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-icon {
+  float: right;
+}
+
+.grid-icon i {
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.grid-icon.active i {
+  background: #C44E00;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 0 !important;
+}
+
+/*---------------------------------------------------------------------------- 
+    Shop Main CSS End
+ ----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- 
+     19.0 Feelings CSS Start
+ ----------------------------------------------------------------------------*/
+.feelings-title h3 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.feelings-title {
+  margin-bottom: 18px;
+}
+
+.feelings-desc p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.fw-name {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.fw-signature img {
+  width: 160px;
+}
+
+.feelings-writter {
+  margin-top: 30px;
+}
+
+.fw-signature {
+  margin-bottom: 8px;
+}
+
+.feelings-right img {
+  height: 100%;
+}
+
+.feelings-right {
+  height: 600px;
+}
+
+/*---------------------------------------------------------------------------- 
+    Feelings CSS End
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+     20.0 Leadership CSS Start
+ ----------------------------------------------------------------------------*/
+.single-leader {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.sl-content {
+  position: absolute;
+  content: "";
+  bottom: -115px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 65px 20px;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.single-leader:hover .sl-content {
+  bottom: 50%;
+}
+
+.sl-social li a i {
+  padding: 5px;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.sl-social li a i:hover {
+  color: #FD5F25;
+}
+
+.sl-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.sl-position {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/*---------------------------------------------------------------------------- 
+    Leadership CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+     21.0 Cart Table CSS Start
+ ----------------------------------------------------------------------------*/
+.cartTable .cart-product-img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.cartTable thead {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table-section .quantity-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartTable {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.cartTable th,
+.cartTable td {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.cartTable th {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 18px;
+  color: #2d2b2b;
+}
+
+.cartTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.cartTable td a {
+  padding: 10px 16px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.cartTable td a:hover {
+  background: #d2d2d2;
+}
+
+
+.cart-buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*---------------------------------------------------------------------------- 
+     Cart Table CSS End
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+     22.0 Cart Total CSS Start
+ ----------------------------------------------------------------------------*/
+
+.cart-total-section .section-top {
+  width: auto;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.price-collection li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-collection li h5 {
+  display: inline-block;
+  width: 200px;
+  font-size: 22px;
+  color: #222;
+}
+
+.cart-total-section .btn-fill {
+  border-radius: 0;
+}
+
+.cth-first {
+  width: 10%;
+}
+
+.cth-second {
+  width: 20%;
+}
+
+.cth-third {
+  width: 20%;
+}
+
+.cth-fourth {
+  width: 30%;
+}
+
+.cth-fifth {
+  width: 20%;
+}
+
+/*---------------------------------------------------------------------------- 
+     Cart Total CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------- 
+     23.0 Elivate Zoom Section CSS Start
+ ----------------------------------------------------------------------------*/
+.shop-inner-product-section .slick-slide img {
+  display: block;
+  height: 150px;
+  width: 98%;
+}
+
+.shop-inner-product-section .elivate-lg-img {
+  height: 550px;
+}
+
+.shop-inner-product-section .zoomWindow {
+  height: 550px;
+}
+
+/*---------------------------------------------------------------------------- 
+     Elivate Zoom Section CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+     24.0 Shop Description CSS Start
+ ----------------------------------------------------------------------------*/
+.shop-inner-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.shop-inner-desc-top .price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.desc-collection {
+  padding: 20px;
+}
+
+.desc-collection li {
+  list-style: initial;
+  font-size: 14px;
+  color: #4d4d4d;
+  padding: 5px 0px;
+  font-weight: 500;
+}
+
+.desc-collection li ::marker {
+  color: #4d4d4d;
+}
+
+.shop-inner-desc .short-desc {
+  font-size: 16px;
+  color: #4d4d4d;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.shop-inner-desc h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.product-quantity {
+  display: flex;
+}
+
+.input-number {
+  width: 80px;
+  padding: 0 12px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+}
+
+.input-number {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+  border: 1px solid #ccc;
+  height: 46px;
+  user-select: none;
+  border-radius: 0 !important;
+}
+
+.input-number-decrement,
+.input-number-increment {
+  display: inline-block;
+  width: 30px;
+  line-height: 44px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-number-decrement:active,
+.input-number-increment:active {
+  background: #ddd;
+}
+
+.input-number-decrement {
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-number-increment {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.bg-gray {
+  background: #f9f9f9;
+  padding: 80px 0;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+/*---------------------------------------------------------------------------- 
+     Shop Description CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------- 
+     25.0 Tabs CSS Start
+ ----------------------------------------------------------------------------*/
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 34, 51, 0.1);
+  border-radius: 0.15rem;
+}
+
+
+.tab-card {
+  border: 0;
+}
+
+.tab-card-header {
+  background: none;
+}
+
+.tab-card-header>.nav-tabs {
+  border: none;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #C44E00;
+}
+
+.tab-card-header>.nav-tabs>li {
+  margin-right: 2px;
+}
+
+.tab-card-header>.nav-tabs>li>a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+  padding: 7px 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tab-card-header>.nav-tabs>li>a.show {
+  border-bottom: 2px solid #C44E00;
+  color: #C44E00;
+}
+
+.tab-card-header>.nav-tabs>li>a:hover {
+  background: #ffe5ec;
+}
+
+.tab-card-header>.tab-content {
+  padding-bottom: 0;
+}
+
+.card-header {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.nav-tabs .nav-link.active:hover {
+  color: #fff;
+  background-color: #C44E00;
+}
+
+.tab-content>.active {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*---------------------------------------------------------------------------- 
+     Tabs CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+     26.0 Single Blog CSS Start
+ ----------------------------------------------------------------------------*/
+.blog-spacific-cat p {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #C44E00;
+  padding: 14px 0;
+}
+
+.blog-img {
+  width: 100%;
+  height: 400px;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-title h3 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.blog-watch-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.blog-watch {
+  margin-right: 20px;
+}
+
+
+.read-more-btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4d4d4d;
+  display: inline-block !important;
+  overflow: hidden;
+  text-decoration: underline;
+}
+
+.single-blog {
+  background: #F9F9F9;
+}
+
+.single-blog-body {
+  padding: 20px 30px;
+}
+
+.read-more-btn span {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.rp-sm-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.rp-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+a.rp-btn {
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+a.rp-btn:hover {
+  color: #C44E00;
+}
+
+
+.blog-tag-colloection li:after {
+  display: none;
+}
+
+.blog-tag-colloection .tags-choice {
+  display: inline-block;
+  color: #4a4a4a;
+  border-radius: 5px;
+}
+
+.social-collection li a {
+  border: 1px solid #4d4d4d;
+  width: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.blog-tag-colloection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-tag-colloection li {
+  margin: 0 15px 10px 0;
+}
+
+/*---------------------------------------------------------------------------- 
+    Single Blog CSS End
+ ----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- 
+     27.0 Blog Details CSS Start
+ ----------------------------------------------------------------------------*/
+.blog-details-section .single-blog {
+  background: transparent;
+}
+
+.blog-details-section .single-blog-body {
+  padding: 20px 0;
+}
+
+.blog-details p {
+  text-align: justify;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #2d2d2d;
+}
+
+.bd-sm-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.blog-share {
+  display: flex;
+  align-items: baseline;
+}
+
+.blog-share h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 15px;
+  font-family: "Montserrat";
+}
+
+.share-collection {
+  display: flex;
+}
+
+.share-collection li {
+  margin-right: 20px;
+}
+
+.share-collection li:last-child {
+  margin-right: 0;
+}
+
+.share-collection li a {
+  border: 0;
+  color: #4d4d4d;
+  width: auto;
+  height: auto;
+  line-height: auto;
+  font-size: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  transition: 0.6s;
+}
+
+.bdt-content p {
+  margin: 0 15px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bdt-collection li {
+  margin-right: 15px;
+}
+
+.bdt-collection li:last-child {
+  margin-right: 0;
+}
+
+/*---------------------------------------------------------------------------- 
+  Blog Details CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+     28.0 Author Section CSS Start
+ ----------------------------------------------------------------------------*/
+.about-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #ffe5ec;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px 0 rgb(0 34 51 / 5%), 2px 4px 10px 0 rgb(0 34 51 / 5%);
+}
+
+.author-bio h5 {
+  font-size: 30px;
+  color: #222;
+}
+
+.author-bio p {
+  font-size: 18px;
+  color: #222;
+}
+
+.author-img {
+  width: 110px;
+  height: 125px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/*---------------------------------------------------------------------------- 
+    Author Section CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+     29.0 Comment Section CSS Start
+ ----------------------------------------------------------------------------*/
+.comment-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.writter-bio h6 {
+  font-size: 20px;
+  color: #222;
+}
+
+.comment-box p {
+  font-size: 16px;
+  color: #222;
+  line-height: 26px;
+}
+
+.writter-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.comment-box h6 {
+  font-size: 18px;
+  color: #222;
+  font-weight: 800;
+}
+
+.comment-box .read-more-btn {
+  text-transform: capitalize;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.bd-title p {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/*---------------------------------------------------------------------------- 
+    Comment Section CSS End
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+     30.0 Post Section CSS Start
+ ----------------------------------------------------------------------------*/
+.post-form .form-control {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  padding: 0;
+}
+
+.bd-title p {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.post-form .form-group {
+  margin-bottom: 30px !important;
+}
+
+/*---------------------------------------------------------------------------- 
+  Post Section CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------- 
+     31.0 Contact Us Section CSS Start
+ ----------------------------------------------------------------------------*/
+.cu-top-wrapper h2 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.cu-top-wrapper p {
+  font-size: 18px;
+}
+
+.scc-icon p i {
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background: #C44E00;
+  color: #fff;
+}
+
+.single-contact-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cu-top-wrapper {
+  margin-bottom: 40px;
+}
+
+.scc-icon {
+  margin-right: 30px;
+}
+
+.scc-text h5 {
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+.cu-page-form .form-group {
+  margin-bottom: 25px !important;
+}
+
+.cu-page-form .form-control {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  padding: 25px 0;
+  background-color: transparent;
+}
+
+.cu-right {
+  background: #F6F6F6;
+  padding: 80px 30px;
+}
+
+.google-map-section iframe {
+  height: 600px;
+  width: 100%;
+  border: none;
+}
+
+.cf-msg {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cf-msg p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #717484;
+  text-transform: capitalize;
+}
+
+/*---------------------------------------------------------------------------- 
+  Contact Us Section CSS End
+ ----------------------------------------------------------------------------*/
