@@ -1,0 +1,182 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 11/07/2020 05:10
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-tooth:before { content: "\f100"; }
+.flaticon-dentist:before { content: "\f101"; }
+.flaticon-tooth-drill:before { content: "\f102"; }
+.flaticon-dentist-1:before { content: "\f103"; }
+.flaticon-dentist-chair:before { content: "\f104"; }
+.flaticon-toothbrush:before { content: "\f105"; }
+.flaticon-chair:before { content: "\f106"; }
+.flaticon-dentist-2:before { content: "\f107"; }
+.flaticon-dental-drill:before { content: "\f108"; }
+.flaticon-dentures:before { content: "\f109"; }
+.flaticon-doctor:before { content: "\f10a"; }
+.flaticon-teeth:before { content: "\f10b"; }
+.flaticon-mouth-mirror:before { content: "\f10c"; }
+.flaticon-tooth-1:before { content: "\f10d"; }
+.flaticon-clinic:before { content: "\f10e"; }
+.flaticon-floss:before { content: "\f10f"; }
+.flaticon-sewing-machine:before { content: "\f110"; }
+.flaticon-sewing-machine-1:before { content: "\f111"; }
+.flaticon-sewing:before { content: "\f112"; }
+.flaticon-measuring:before { content: "\f113"; }
+.flaticon-mannequin:before { content: "\f114"; }
+.flaticon-tailor:before { content: "\f115"; }
+.flaticon-sewing-machine-2:before { content: "\f116"; }
+.flaticon-sewing-1:before { content: "\f117"; }
+.flaticon-needle:before { content: "\f118"; }
+.flaticon-ball-of-wool:before { content: "\f119"; }
+.flaticon-dummy:before { content: "\f11a"; }
+.flaticon-pin:before { content: "\f11b"; }
+.flaticon-mannequin-1:before { content: "\f11c"; }
+.flaticon-buttons:before { content: "\f11d"; }
+.flaticon-leather:before { content: "\f11e"; }
+.flaticon-sewing-2:before { content: "\f11f"; }
+.flaticon-politician:before { content: "\f120"; }
+.flaticon-capitol:before { content: "\f121"; }
+.flaticon-conference:before { content: "\f122"; }
+.flaticon-politics:before { content: "\f123"; }
+.flaticon-vote:before { content: "\f124"; }
+.flaticon-human-rights:before { content: "\f125"; }
+.flaticon-voting:before { content: "\f126"; }
+.flaticon-politics-1:before { content: "\f127"; }
+.flaticon-politician-1:before { content: "\f128"; }
+.flaticon-peace:before { content: "\f129"; }
+.flaticon-politic:before { content: "\f12a"; }
+.flaticon-political:before { content: "\f12b"; }
+.flaticon-voting-1:before { content: "\f12c"; }
+.flaticon-debate:before { content: "\f12d"; }
+.flaticon-debate-1:before { content: "\f12e"; }
+.flaticon-supporter:before { content: "\f12f"; }
+.flaticon-senate:before { content: "\f130"; }
+.flaticon-crutch:before { content: "\f131"; }
+.flaticon-wheelchair:before { content: "\f132"; }
+.flaticon-crutches:before { content: "\f133"; }
+.flaticon-wheelchair-1:before { content: "\f134"; }
+.flaticon-cane:before { content: "\f135"; }
+.flaticon-wheelchair-2:before { content: "\f136"; }
+.flaticon-walker:before { content: "\f137"; }
+.flaticon-walker-1:before { content: "\f138"; }
+.flaticon-hand:before { content: "\f139"; }
+.flaticon-wheelchair-3:before { content: "\f13a"; }
+.flaticon-foot:before { content: "\f13b"; }
+.flaticon-amputation:before { content: "\f13c"; }
+.flaticon-orthopedic:before { content: "\f13d"; }
+.flaticon-orthopedic-1:before { content: "\f13e"; }
+.flaticon-ribs:before { content: "\f13f"; }
+.flaticon-bionic-leg:before { content: "\f140"; }
+.flaticon-liquid-soap:before { content: "\f141"; }
+.flaticon-cleaning-spray:before { content: "\f142"; }
+.flaticon-washing-machine:before { content: "\f143"; }
+.flaticon-hand-washer:before { content: "\f144"; }
+.flaticon-sanitizer:before { content: "\f145"; }
+.flaticon-cleaning:before { content: "\f146"; }
+.flaticon-dishwashing:before { content: "\f147"; }
+.flaticon-hygiene:before { content: "\f148"; }
+.flaticon-hand-washing:before { content: "\f149"; }
+.flaticon-cleaning-1:before { content: "\f14a"; }
+.flaticon-cleaning-products:before { content: "\f14b"; }
+.flaticon-spray:before { content: "\f14c"; }
+.flaticon-cleaning-spray-1:before { content: "\f14d"; }
+.flaticon-vacuum-cleaner:before { content: "\f14e"; }
+.flaticon-sweep:before { content: "\f14f"; }
+.flaticon-soap:before { content: "\f150"; }
+.flaticon-cleaning-tools:before { content: "\f151"; }
+.flaticon-hand-1:before { content: "\f152"; }
+.flaticon-mop:before { content: "\f153"; }
+.flaticon-cloth:before { content: "\f154"; }
+.flaticon-stethoscope:before { content: "\f155"; }
+.flaticon-dog:before { content: "\f156"; }
+.flaticon-cat:before { content: "\f157"; }
+.flaticon-animal:before { content: "\f158"; }
+.flaticon-vaccine:before { content: "\f159"; }
+.flaticon-location:before { content: "\f15a"; }
+.flaticon-vet:before { content: "\f15b"; }
+.flaticon-veterinary:before { content: "\f15c"; }
+.flaticon-pet:before { content: "\f15d"; }
+.flaticon-dog-1:before { content: "\f15e"; }
+.flaticon-animal-1:before { content: "\f15f"; }
+.flaticon-animal-2:before { content: "\f160"; }
+.flaticon-animal-3:before { content: "\f161"; }
+.flaticon-animal-4:before { content: "\f162"; }
+.flaticon-chat:before { content: "\f163"; }
+.flaticon-hospital:before { content: "\f164"; }
+.flaticon-director:before { content: "\f165"; }
+.flaticon-balance:before { content: "\f166"; }
+.flaticon-bond:before { content: "\f167"; }
+.flaticon-browser:before { content: "\f168"; }
+.flaticon-recognition:before { content: "\f169"; }
+.flaticon-idea:before { content: "\f16a"; }
+.flaticon-marketing:before { content: "\f16b"; }
+.flaticon-brainstorming:before { content: "\f16c"; }
+.flaticon-teamwork:before { content: "\f16d"; }
+.flaticon-responsibility:before { content: "\f16e"; }
+.flaticon-worldwide:before { content: "\f16f"; }
+.flaticon-travel-agency:before { content: "\f170"; }
+.flaticon-temporary-agency:before { content: "\f171"; }
+.flaticon-employment:before { content: "\f172"; }
+.flaticon-real-estate-agent:before { content: "\f173"; }
+.flaticon-real-estate-agency:before { content: "\f174"; }
+.flaticon-Business-man:before { content: "\f175"; }
+.flaticon-idea-1:before { content: "\f176"; }
+.flaticon-employee:before { content: "\f177"; }
+.flaticon-psychologist:before { content: "\f178"; }
+.flaticon-psychologist-1:before { content: "\f179"; }
+.flaticon-headache:before { content: "\f17a"; }
+.flaticon-brain:before { content: "\f17b"; }
+.flaticon-mental-health:before { content: "\f17c"; }
+.flaticon-stress:before { content: "\f17d"; }
+.flaticon-recovered:before { content: "\f17e"; }
+.flaticon-happy:before { content: "\f17f"; }
+.flaticon-sweeper-working:before { content: "\f180"; }
+.flaticon-employee-1:before { content: "\f181"; }
+.flaticon-phone-ringing:before { content: "\f182"; }
+.flaticon-clock:before { content: "\f183"; }
+.flaticon-play-button:before { content: "\f184"; }
+.flaticon-email:before { content: "\f185"; }
+.flaticon-email-1:before { content: "\f186"; }
+.flaticon-meeting:before { content: "\f187"; }
+.flaticon-video-call:before { content: "\f188"; }
+.flaticon-group:before { content: "\f189"; }
+.flaticon-call:before { content: "\f18a"; }
+.flaticon-worldwide-1:before { content: "\f18b"; }
+.flaticon-location-1:before { content: "\f18c"; }
+.flaticon-calendar:before { content: "\f18d"; }
+.flaticon-archery:before { content: "\f18e"; }
+.flaticon-hand-shake:before { content: "\f18f"; }
+.flaticon-money:before { content: "\f190"; }
+.flaticon-telephone:before { content: "\f191"; }
+.flaticon-growth:before { content: "\f192"; }
+.flaticon-puzzle:before { content: "\f193"; }
+.flaticon-credit-card:before { content: "\f194"; }
+.flaticon-report:before { content: "\f195"; }
+.flaticon-location-2:before { content: "\f196"; }
+.flaticon-money-growth:before { content: "\f197"; }
